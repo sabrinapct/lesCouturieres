@@ -1,0 +1,280 @@
+  /***********/
+  /*PAGE HOME*/
+  /***********/
+
+@media only screen and (min-width: 768px) {
+    .grid-container-home {
+      height: 150vh;
+      padding: 0;
+      margin: 0 7vw;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-template-rows: 3.7fr 1.3fr 6fr 1fr;
+      grid-template-areas: "carousel carousel"
+                           "nav nav"
+                           "presentation calendrier"
+                           "footer footer";
+      grid-column-gap: 10%;
+    }
+    #img-presentation {
+        float: left;
+    }
+}
+@media only screen and (max-width: 300px) {
+    .grid-container-home {
+      height:;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3.7fr 1.3fr 6fr 6fr 1fr;
+      grid-template-areas: "carousel"
+                           "nav"
+                           "presentation"
+                           "calendrier"
+                           "footer";
+    }
+}
+
+.grid-carousel {
+  grid-area: carousel;
+}
+.grid-nav {
+  grid-area: nav;
+}
+.grid-presentation {
+  grid-area: presentation;
+}
+.grid-calendrier {
+  grid-area: calendrier;
+  display: flex;
+  justify-content: flex-end;
+}
+footer {
+  grid-area: footer;
+}
+
+  /***************/
+  /*PAGE CREATION*/
+  /***************/
+
+.grid-container-crea {
+  height: 150vh;
+  padding: 0;
+  margin: 0 7vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1.3fr 1fr 9fr 1fr;
+  grid-template-areas: "nav nav"
+                       "titre search"
+                       "categories creations"
+                       "footer footer";
+}
+.grid-nav {
+  grid-area: nav;
+}
+.grid-titre {
+  grid-area: titre;
+}
+.grid-search {
+  grid-area: search;
+}
+.grid-categories {
+  grid-area: categories;
+}
+.grid-creations {
+  grid-area: creations;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "crea1 crea2 crea3"
+                       "crea4 crea5 crea6"
+                       "crea7 crea8 crea9"
+                       "crea10 crea11 crea12"
+                       "crea13 crea14 crea15"
+                       "crea16 crea17 crea18"
+                       "crea19 crea20 crea21"
+                       "crea22 crea23 crea24";
+  grid-column-gap: 20px;
+  grid-row-gap: 24vh;
+  padding: 20px;
+}
+.crea:first-child {
+  grid-area: crea1;
+}
+.crea:nth-child(2) {
+  grid-area: crea2;
+}
+.crea:nth-child(3) {
+  grid-area: crea3;
+}
+.crea:nth-child(4) {
+  grid-area: crea4;
+}
+.crea:nth-child(5) {
+  grid-area: crea5;
+}
+.crea:nth-child(6) {
+  grid-area: crea6;
+}
+.crea:nth-child(7) {
+  grid-area: crea7;
+}
+.crea:nth-child(8) {
+  grid-area: crea8;
+}
+.crea:nth-child(9) {
+  grid-area: crea9;
+}
+.crea:nth-child(10) {
+  grid-area: crea10;
+}
+.crea:nth-child(11) {
+  grid-area: crea11;
+}
+.crea:nth-child(12) {
+  grid-area: crea12;
+}
+.crea:nth-child(13) {
+  grid-area: crea13;
+}
+.crea:nth-child(14) {
+  grid-area: crea14;
+}
+.crea:nth-child(15) {
+  grid-area: crea15;
+}
+.crea:nth-child(16) {
+  grid-area: crea16;
+}
+.crea:nth-child(17) {
+  grid-area: crea17;
+}
+.crea:nth-child(18) {
+  grid-area: crea18;
+}
+.crea:nth-child(19) {
+  grid-area: crea19;
+}
+.crea:nth-child(20) {
+  grid-area: crea20;
+}
+.crea:nth-child(21) {
+  grid-area: crea21;
+}
+.crea:nth-child(22) {
+  grid-area: crea22;
+}
+.crea:nth-child(23) {
+  grid-area: crea23;
+}
+.crea:nth-child(24) {
+  grid-area: crea24;
+}
+
+footer {
+  grid-area: footer;
+}
+ 
+  /***********/
+  /*PAGE TUTO*/
+  /***********/
+
+.grid-container-tuto {
+  height: 150vh;
+  padding: 0;
+  margin: 0 7vw;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1.3fr 1fr 9fr 1fr;
+  grid-template-areas: "nav nav"
+                       "titre search"
+                       "menu tutos"
+                       "footer footer";
+}
+.grid-nav {
+  grid-area: nav;
+}
+.grid-titre {
+  grid-area: titre;
+}
+.grid-search {
+  grid-area: search;
+}
+.grid-menu {
+  grid-area: menu;
+}
+.grid-tutos {
+  grid-area: tutos;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "tuto1 tuto2 tuto3"
+                       "tuto4 tuto5 tuto6"
+                       "tuto7 tuto8 tuto9"
+                       "tuto10 tuto11 tuto12"
+                       "tuto13 tuto14 tuto15"
+                       "tuto16 tuto17 tuto18";
+  grid-column-gap: 20px;
+  grid-row-gap: 100px;
+  padding: 20px;
+}
+.tutos:first-child {
+  grid-area: tuto1;
+}
+.tutos:nth-child(2) {
+  grid-area: tuto2;
+}
+.tutos:nth-child(3) {
+  grid-area: tuto3;
+}
+.tutos:nth-child(4) {
+  grid-area: tuto4;
+}
+.tutos:nth-child(5) {
+  grid-area: tuto5;
+}
+.tutos:nth-child(6) {
+  grid-area: tuto6;
+}
+.tutos:nth-child(7) {
+  grid-area: tuto7;
+}
+.tutos:nth-child(8) {
+  grid-area: tuto8;
+}
+.tutos:nth-child(9) {
+  grid-area: tuto9;
+}
+.tutos:nth-child(10) {
+  grid-area: tuto10;
+}
+.tutos:nth-child(11) {
+  grid-area: tuto11;
+}
+.tutos:nth-child(12) {
+  grid-area: tuto12;
+}
+.tutos:nth-child(13) {
+  grid-area: tuto13;
+}
+.tutos:nth-child(14) {
+  grid-area: tuto14;
+}
+.tutos:nth-child(15) {
+  grid-area: tuto15;
+}
+.tutos:nth-child(16) {
+  grid-area: tuto16;
+}
+.tutos:nth-child(17) {
+  grid-area: tuto17;
+}
+.tutos:nth-child(18) {
+  grid-area: tuto18;
+}
+
+
+footer {
+  grid-area: footer;
+}

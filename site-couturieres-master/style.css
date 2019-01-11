@@ -1,0 +1,297 @@
+/* CHARTE GRAPHIQUE
+code vert: #abebc6
+code rose: #f48fb1 */
+
+/* COULEURS TESTS */
+
+.couleur1 {
+  background-color: blue;
+}
+.couleur2 {
+  background-color:red;
+}
+.couleur3 {
+  background-color:green;
+}
+
+  /***********/
+  /**GENERAL**/
+  /***********/
+
+/* TYPOGRAPHIE */
+h1 {
+  font-family: 'Dancing script', cursive;
+  font-size: 45px;
+  color:#f48fb1;
+}
+h2 {
+   font-family: 'Dancing script', cursive;
+   color:#f48fb1;
+}
+h3 {
+  font-family: 'Dancing script', cursive;
+   color:#f48fb1;
+  
+
+}
+h4, h5, h6 {
+  font-family: 'Dancing script', cursive;
+   color:#f48fb1;
+ 
+}
+p {
+  font-family: 'Thasadith', sans-serif;
+  font-size: 20px;
+}
+a {
+  color: #eaeded;
+  font-size: 27px;
+  font-family: 'Thasadith', sans-serif;
+  list-style-type: square;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #abebc6;
+}
+
+  /*Curseur*/
+
+* {
+  cursor: url('image/normal.cur'), auto;
+}
+a:hover {
+  cursor: url('image/No Disponible.cur'), pointer;
+}
+input:hover {
+  cursor: url('image/texto.cur'), auto;
+}
+
+  /**Navbar**/
+.div-nav {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Thasadith', sans-serif;
+  font-size: 30px;
+  background-color:#eaeded
+}
+.div-nav a {
+  background-color:transparent;
+  height: 100%;
+  width: 25%;
+  text-align: center;
+  padding-top: 1.4%;
+  transition:0.5s;
+  color:#f48fb1;
+  text-decoration: none;
+}
+.div-nav a:hover {
+  background-color:#f48fb1;
+  color: white;
+}
+.div-nav {
+  background-image: url(image/scissorsClose.png);
+  background-position: left;
+  background-size:7%;
+  background-repeat: no-repeat;
+}
+.div-nav:hover{
+  background-image: url(image/scissorsOpen.png);
+  background-position: left;
+  background-size:7%;
+  background-repeat: no-repeat;
+}
+.div-nav a:hover:first-child {
+  background-image: url(image/scissorsOpen.png);
+  background-position: left;
+  background-size:28%;
+  background-repeat: no-repeat;
+  transition: none;
+}
+
+  /**FOOTER**/
+footer {
+  background-color: #eaeded;
+  
+}
+#fb, #insta, #google {
+  color:#f48fb1;
+  font-size: 3em;
+  margin: .3em .4em;
+}
+#fb:hover {
+  color:#3b5998;
+}
+#insta:hover {
+  color:#ffc273;
+}
+#google:hover {
+  color:#db4a39;
+}
+
+
+  /********/
+  /**HOME**/
+  /********/
+  
+
+/*Div dans les grilles*/
+.div-carousel, .div-calendrier, .div-presentation {
+  height: 93%;
+}
+.div-nav {
+  height: 75%;
+}
+
+/*Carousel*/
+
+.div-carousel {
+  background-color: #f48fb1;
+  height: 38vh;
+}
+.carousel-item {
+  height: 38vh;
+}
+.div-carousel img {
+  opacity: .7;
+  max-width: 100%;
+  height: auto;
+}
+
+/*Présentation*/
+.div-presentation {
+padding: 10px;
+}
+
+#img-presentation {
+  width: 30%;
+  height: 40%;
+  margin: 10px;
+  
+}
+#img-presentation img {
+  margin-top: 15%;
+  width: 100%;
+  height: auto;
+}
+
+/*Calendrier*/
+.div-calendrier {
+  background-color:#eaeded;
+  overflow: scroll;
+  padding: 0 5%;
+  text-align: center;
+}
+.input-search {
+  width: 100%;
+  text-align: center;
+}
+#img-calendrier {
+  width: 94%;
+  height: 18%;
+  float: left;
+  margin: 10px;
+}
+#img-calendrier img {
+  width: 100%;
+  height: auto;
+}
+.div-calendrier h1 {
+  font-size: 35px;
+  margin: 10px;
+}
+
+/*************/
+/**CREATIONS**/
+/*************/
+
+
+/* Titre */
+.grid-titre {
+  background-color: #eaeded;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Search bar */
+.div-search {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 3%;
+}
+
+/* Catégories */
+.div-categories {
+  background-color: #f48fb1;
+}
+.liste-crea {
+  color: #eaeded;
+  font-size: 27px;
+  font-family: 'Thasadith', sans-serif;
+  list-style-type: square;
+  line-height: 60px;
+  text-decoration: none;
+}
+
+/* Créations */
+.div-creations {
+  background-color: #eaeded;
+  height: 110vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.crea {
+  border: black .5px solid;
+  text-align: center;
+  padding-top: 7.5%;
+  background-color: white;
+}
+.crea img {
+  width: 85%;
+  height: auto;
+}
+
+
+/********/
+/**TUTO**/
+/********/
+
+/*Div dans les grilles*/
+
+
+/* menu */
+.div-menu {
+  background-color: #f48fb1;
+}
+
+/* tutos */
+.div-tutos {
+  background-color: #eaeded;
+  height: 110vh;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+.tutos {
+  text-align: center;
+  padding-top: 7.5%;
+  background-color: white;
+}
+.tutos h4 {
+  margin-top: 7.5%;
+}
+.tutos iframe {
+  width: 100%;
+  height: auto;
+}
+
+/* catégories */
+.liste-tuto {
+  color: #eaeded;
+  font-size: 27px;
+  font-family: 'Thasadith', sans-serif;
+  list-style-type: square;
+  line-height: 60px;
+}
+
+
